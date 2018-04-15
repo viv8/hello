@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Library_Management</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>Login_Servlet</servlet-name>
+  <servlet-class>com.jspiders.lib_management.Login_Servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Login_Servlet</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>Logout</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Logout.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Logout</servlet-name>
+  <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Login_JSP</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Login.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Login_JSP</servlet-name>
+  <url-pattern>/login_form</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Admin_Home</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Admin_Home.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Admin_Home</servlet-name>
+  <url-pattern>/admin_home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Add_User</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Add_User.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Add_User</servlet-name>
+  <url-pattern>/registration</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Search_User</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Search_User.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Search_User</servlet-name>
+  <url-pattern>/search_page</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Search_User_details</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Search_User_details.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Search_User_details</servlet-name>
+  <url-pattern>/search_result</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Remove_User</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Remove_User.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Remove_User</servlet-name>
+  <url-pattern>/remove_user</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Remove_User_Confirm</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Remove_User_Confirm.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Remove_User_Confirm</servlet-name>
+  <url-pattern>/remove_user_result</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>New_User_Added</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/New_User_Added.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>New_User_Added</servlet-name>
+  <url-pattern>/new_user</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Add_ErrorPage</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Add_ErrorPage.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Add_ErrorPage</servlet-name>
+  <url-pattern>/add_error</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  <servlet-name>Login_Error</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Login_Error.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Login_Error</servlet-name>
+  <url-pattern>/login_error</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Lib_Home</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Lib_Home.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Lib_Home</servlet-name>
+  <url-pattern>/library_home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Allot_Book</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Allot_Book.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Allot_Book</servlet-name>
+  <url-pattern>/allot_book</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Allot_Book_Confirm</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Allot_Book_Confirm.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Allot_Book_Confirm</servlet-name>
+  <url-pattern>/allot_book_confirm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Alloted_Book</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Alloted_Book.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Alloted_Book</servlet-name>
+  <url-pattern>/alloted_book</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Add_Book</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Add_Book.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Add_Book</servlet-name>
+  <url-pattern>/add_book</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Return_Book</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Return_Book.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Return_Book</servlet-name>
+  <url-pattern>/return_book</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Return_Book_Confirm</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Return_Book_Confirm.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Return_Book_Confirm</servlet-name>
+  <url-pattern>/return_book_confirm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Student_Home</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Student_Home.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Student_Home</servlet-name>
+  <url-pattern>/student_home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Search_Book</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Search_Book.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Search_Book</servlet-name>
+  <url-pattern>/search_book</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Update_Password</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Update_Password.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Update_Password</servlet-name>
+  <url-pattern>/update_password</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Update_Password_Confirm</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Update_Password_Confirm.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Update_Password_Confirm</servlet-name>
+  <url-pattern>/update_password_confirm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Update_Password_Details</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Update_Password_Details.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Update_Password_Details</servlet-name>
+  <url-pattern>/update_password_details</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Edit_Profile</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Edit_Profile.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Edit_Profile</servlet-name>
+  <url-pattern>/edit_profile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Edit_Profile_Confirm</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Edit_Profile_Confirm.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Edit_Profile_Confirm</servlet-name>
+  <url-pattern>/edit_profile_confirm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Student_Details</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Student_Details.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Student_Details</servlet-name>
+  <url-pattern>/student_details</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Search_Book_Details</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Search_Book_Details.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Search_Book_Details</servlet-name>
+  <url-pattern>/search_book_details</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Section_CS</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Section_CS.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Section_CS</servlet-name>
+  <url-pattern>/section_CS</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Section_IS</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Section_IS.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Section_IS</servlet-name>
+  <url-pattern>/section_IS</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Section_EE</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Section_EE.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Section_EE</servlet-name>
+  <url-pattern>/section_EE</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Section_EC</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Section_EC.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Section_EC</servlet-name>
+  <url-pattern>/section_EC</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Section_ME</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Section_ME.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Section_ME</servlet-name>
+  <url-pattern>/section_ME</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Student_Book_Info</servlet-name>
+  <jsp-file>/WEB-INF/JSP_content/Student_Book_Info.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Student_Book_Info</servlet-name>
+  <url-pattern>/student_book_info</url-pattern>
+  </servlet-mapping>
+</web-app>
